@@ -183,7 +183,7 @@ header
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 100vh;
+	height: 600px;
 	padding: 1px;
 }
 
@@ -426,6 +426,7 @@ page 5
     bottom: 40%;
     left: 5%;
     clip: rect(0, 0, 0, 0);
+    transition: all .6s;
 }
 
 label[for="trigger_bio"] {
@@ -438,7 +439,7 @@ label[for="trigger_bio"] {
 	font-style: italic;
 	font-weight: 400;
     -webkit-transition: left .6s;
-    transition: left .6s;
+    transition: all .6s;
 }
 
 .trigger_bio:checked + label  {
@@ -458,24 +459,28 @@ label[for="trigger_bio"]::after {
 	height: 100px;
 	width: 0%;
 	top: 0;
-	left: 0;	
+	left: 0;
+	transition: all .6s;	
 }
 
 
 .trigger_bio:checked + label[for="trigger_bio"]::after {
 
 	width: 100%;
+	transition: all .6s;
 }
 
 .trigger_bio:checked ~ .bio_intro_container {
 
 	left: -100%;
 	opacity: 0;
+	transition: all .6s;
 }
 
 .trigger_bio:checked ~ .bio {
 
 	left: 0;
+	transition: all .6s;
 }
 
 .bio,
@@ -1132,6 +1137,11 @@ header
 	page 7
 	======================================== */
 
+	#page_7 {
+
+		background-attachment: fixed;
+	}
+
 	.before_text {
 
 		text-align: left;
@@ -1463,6 +1473,15 @@ page 6
 	width: 14%;
 }
 
+
+
+/* ======================================== 
+make background images fixed
+======================================== */
+	#page_7 {
+
+		background-attachment: fixed;
+	}
 /* ======================================== 
 end of page styling and media queries 
 ======================================== */
