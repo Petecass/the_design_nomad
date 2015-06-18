@@ -276,8 +276,9 @@ page 3 / instagram page
 .instagram_photo {
 
 	list-style: none;
-	width: 50%;
-	height: 50%;
+	width: 50vw;
+	height: 50vw;
+	margin: 0;
 }
 
 .instagram_photo img {
@@ -315,7 +316,10 @@ page 3 / instagram page
 	width: 40px;
 	border-bottom: 5px solid #3a3d3e;
 	margin: 20px auto;
+	
 }
+
+
 
 
 /* ======================================== 
@@ -895,7 +899,8 @@ footer h3 {
 
 	.instagram_photo {
 
-		width: 33.33333%;
+		width: 33.33333vw;
+		height: 33.33333vw;
 	}
 
 
@@ -1059,7 +1064,8 @@ header
 	}
 	.instagram_photo {
 
-		width: 25%;
+		width: 25vw;
+		height: 25vw;
 	}
 
 
@@ -1235,6 +1241,17 @@ footer span {
 	display: block;
 }
 
+header {
+
+	height: 100vh;
+	overflow: hidden;
+}
+
+.head_content_wrap {
+
+	height: 100vh;
+	overflow: hidden;
+}
 
 @-webkit-keyframes logo {
 
@@ -1398,7 +1415,8 @@ page 3
 }
 .instagram_photo {
 
-	width: 20%;
+	width: 20vw;
+	height: 20vw;
 }
 .instagram_feed:hover img {
 
